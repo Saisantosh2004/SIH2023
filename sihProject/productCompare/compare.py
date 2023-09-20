@@ -3,6 +3,9 @@ from .flipkart import (
     scrape_flipkart_products,
 )  # Import the Flipkart function from flipkart.py
 from .amazon import scrape_amazon_products  # Import the Amazon function from amazon.py
+import pandas as pd
+import mpld3
+import matplotlib.pyplot as plt
 
 
 def extract_first_three_words(title):
@@ -57,6 +60,9 @@ def get_product_data(search_query):
     return combined_dict
 
 
+# Alternatively, you can display the HTML in a Jupyter Notebook cell
+# Uncomment the next line if you're using Jupyter Notebook
+# mpld3.display()
 
 
 
